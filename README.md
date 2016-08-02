@@ -7,7 +7,7 @@ Useful when combined with grep.
 
 python whoishiring.py \[id]
 
-python whoishiring.py 12202865 | grep -i python | grep -i remote \> jerbs.txt
+python whoishiring.py 12202865 | grep -i python | grep -i remote | sed -e "s/^.*$/&1\n/" \> jerbs.txt
 
 ## Requirements:
 
