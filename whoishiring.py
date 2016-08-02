@@ -26,6 +26,9 @@ for post_id in post_ids:
     if not ('deleted' in hn_post_json and hn_post_json['deleted']):
         post = hn_post_json['text']
 
+        # She's in UTF-8.
+        post = post.encode('utf8')
+
         # Replace the newlines with a space.  Sure, it crams things together, but it makes this script easier
         # to use with grep.
         post = post.replace('\n', ' ')
