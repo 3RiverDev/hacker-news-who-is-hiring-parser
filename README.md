@@ -7,8 +7,8 @@ Useful when combined with grep.
 
 python whoishiring.py \[id]
 
-python whoishiring.py 12202865 | grep -i python | grep -i remote | sed -e "s/^.*$/&1\n/" \> jerbs.txt
+python whoishiring.py 15601729 | grep -i python | grep -i remote | sed -e "s/^.*$/&1\n/" \> jerbs.txt
 
 ## Requirements:
 
-1. Python 2.6+ ('json' library)
+1. Python 3
